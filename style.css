@@ -1,0 +1,254 @@
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/*section - 1 starts*/
+
+/*Header section starts*/
+
+header {
+    width: 100%;
+    background-color: rgba(23, 23, 23, 0.39);
+    padding: 20px;
+    position: absolute;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    margin: auto;
+
+}
+
+header a{
+    text-decoration: none;
+    margin-right: 100px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color:rgba(255, 255, 255, 0.719);
+    font-family:Tahoma;
+
+    
+/*Header section end*/
+
+/* Banner section starts*/
+}
+
+.banner-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(10, 137, 201, 0.705), rgba(24, 92, 119, 0.664)), url(./img/pexels-felix-mittermeier-957040.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    /* Change multiple gradient bg colours
+    background: linear-gradient(rgba(6, 72, 105, 0.849), rgb(3, 96, 133)); 
+    */
+    
+    /*
+    Edit brightness
+    filter: brightness(4); 
+    */
+    display: flex;
+    align-items: center
+}
+
+.banner-container .container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+/* Banner section ends*/
+
+/* Left section starts*/
+.left-section{
+    width: 600px;
+    align-self: flex-start;
+}
+
+.left-section h1{
+    margin: 0;
+    font-size: 40px;
+    color: white;
+}
+
+.left-section p{
+    margin: 0;
+    font-size: var(--font-size14);
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.884);
+    margin-top: 18px;
+    line-height: 28px;
+}
+
+.left-section button{
+    color: var(--primary-color);
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 6px;
+    margin-top: 15px; 
+    cursor: pointer;
+}
+
+
+/* Left section ends*/
+
+/* Right section starts*/
+
+.right-section {
+    width: 400px;
+    background-color:white;
+    border-radius: 15px;
+    padding: 40px 0;
+    box-shadow: 0 5px rgba(0,0,0, 0.219); 
+}
+
+.right-section h4{
+    font-size: 20px;
+    width: 300px;
+    margin:auto;
+    margin-bottom: 30px;
+    color:rgb(136 , 136, 136);
+}
+
+
+.input-group {
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-group label {
+    color: rgb(165, 165, 165); 
+    font-size: var(--font-size14);
+    position: absolute;
+    top: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.input-group input {
+    border: none;
+    padding: 7px;
+    margin-top: 5px;
+    outline: none;
+    color: var(--primary-color);
+    caret-color: red;
+    border-bottom: 2px solid #c9c9c98a;;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label{
+    color: var(--primary-color);
+    top: -10px;
+    font-size: 12px;
+}
+
+.input-group input:focus,
+.input-group input:valid{
+    border-color: var(--primary-color);
+}
+
+
+.submit-section {
+    text-align: center;
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    box-shadow: 0 3px 6px silver;
+}
+
+/* Right section ends*/
+
+/*Section- 1 stops*/
+
+
+/*Section- 2 stops*/
+.section-two {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+.card-container {
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 26px rgb(102, 98, 98);
+    overflow: hidden;
+    text-align: center; 
+}
+
+
+.card-container h1{
+    color: rgb(136, 136, 136);
+}
+
+.image-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1) rotate(-5deg);
+    
+
+}
+
+
+/*Section- 2 stops*/
+
+footer {
+    text-align: center;
+    color: gray;
+    padding: 15px;
+    font-size: 18px;
+}
+
+footer span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+span a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
